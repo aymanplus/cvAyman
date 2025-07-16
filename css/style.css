@@ -1,0 +1,267 @@
+/* --- Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* --- Global Styles & Variables --- */
+:root {
+    --primary-color: #4a4a4a;
+    --secondary-color: #007bff;
+    --background-color: #f4f4f9;
+    --card-background: #ffffff;
+    --text-color: #333;
+    --light-text-color: #666;
+    --border-color: #e0e0e0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', 'Cairo', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--card-background);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    position: relative;
+}
+
+/* --- Language Switcher --- */
+#lang-toggle {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px; /* جعل الحواف أكثر دائرية */
+    cursor: pointer;
+    font-family: 'Poppins', 'Cairo', sans-serif;
+    font-weight: 600;
+    display: flex; /* لتوسيط الأيقونة والنص */
+    align-items: center;
+    gap: 0.5rem; /* مسافة بين الأيقونة والنص */
+    transition: all 0.3s ease; /* تحريك أكثر سلاسة */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15); /* إضافة ظل خفيف */
+}
+#lang-toggle:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* رفعه للأعلى عند التمرير */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* زيادة الظل عند التمرير */
+}
+#lang-toggle svg {
+    fill: currentColor; /* لجعل لون الأيقونة نفس لون النص */
+}
+body[dir="rtl"] #lang-toggle {
+    right: auto;
+    left: 1.5rem;
+}
+
+
+/* --- Header & Personal Details --- */
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.header h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+.personal-details {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    margin-top: 1rem;
+    color: var(--light-text-color);
+}
+.personal-details span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.personal-details svg {
+    width: 16px;
+    height: 16px;
+    fill: var(--secondary-color);
+}
+
+/* --- Section Styling --- */
+.section {
+    margin-bottom: 2rem;
+}
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Work Experience --- */
+.experience-item {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.experience-date {
+    flex-shrink: 0;
+    width: 120px;
+    color: var(--light-text-color);
+    text-align: right;
+    font-weight: 500;
+}
+body[dir="rtl"] .experience-date {
+    text-align: left;
+}
+.experience-content h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.experience-content h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+.experience-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: var(--light-text-color);
+}
+body[dir="rtl"] .experience-content ul {
+    padding-left: 0;
+    padding-right: 20px;
+}
+.experience-content ul li {
+    margin-bottom: 0.25rem;
+}
+
+/* --- Skills --- */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+.skill-tag {
+    background-color: #e7f3ff;
+    color: #0056b3;
+    padding: 0.4rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* --- Other Skills --- */
+.other-skills-list {
+    list-style-position: inside;
+    padding-left: 0;
+    columns: 2;
+    column-gap: 2rem;
+}
+body[dir="rtl"] .other-skills-list {
+     list-style-position: inside;
+}
+.other-skills-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* --- Education & Certificates --- */
+.edu-cert-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+.edu-cert-item:last-child {
+    border-bottom: none;
+}
+.edu-cert-item .info h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.edu-cert-item .info p {
+    color: var(--light-text-color);
+    font-size: 0.9rem;
+}
+.edu-cert-item .date {
+    color: var(--light-text-color);
+    font-size: 0.9rem;
+    white-space: nowrap;
+    margin-left: 1rem;
+}
+body[dir="rtl"] .edu-cert-item .date {
+    margin-left: 0;
+    margin-right: 1rem;
+}
+
+/* --- Footer --- */
+.footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--light-text-color);
+}
+.footer a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .container {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    .experience-item {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .experience-date {
+        text-align: left;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+    body[dir="rtl"] .experience-date {
+        text-align: right;
+    }
+    .other-skills-list {
+        columns: 1;
+    }
+    .personal-details {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+    .section-title {
+        font-size: 1.3rem;
+    }
+}
