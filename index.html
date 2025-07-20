@@ -3,54 +3,693 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ayman Al-mehanni - Experienced Financial Operations Specialist and Full-Stack Developer with expertise in React, Node.js, Flutter, and financial systems.">
+    <meta name="keywords" content="Ayman Al-mehanni, Financial Operations, Full-Stack Developer, React, Node.js, Flutter, Programming, Saudi Arabia">
+    <meta name="author" content="Ayman Khaled Yahya Al-mehanni">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Ayman Al-mehanni - CV">
+    <meta property="og:description" content="Experienced Financial Operations Specialist and Full-Stack Developer">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ayman Al-mehanni - CV">
+    <meta name="twitter:description" content="Experienced Financial Operations Specialist and Full-Stack Developer">
+    
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data:;">
+    
     <title>Ayman Al-mehanni - CV</title>
-    <!-- ربط ملف التنسيق الخارجي -->
-    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ayman Khaled Yahya Al-mehanni",
+        "email": "aymanalmehanni@gmail.com",
+        "telephone": "0509312930",
+        "birthDate": "1999-08-28",
+        "nationality": "Yemeni",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "Saudi Arabia"
+        },
+        "jobTitle": "Financial Operations Specialist",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Financial Sector"
+        },
+        "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Sana'a Community College"
+        },
+        "knowsLanguage": ["Arabic", "English"],
+        "url": "https://github.com/AymanAlmehanni"
+    }
+    </script>
+    
+    <style>
+        /* --- Google Fonts with Performance Optimization --- */
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+        /* --- CSS Custom Properties (Variables) --- */
+        :root {
+            --primary-color: #4a4a4a;
+            --secondary-color: #007bff;
+            --background-color: #f4f4f9;
+            --card-background: #ffffff;
+            --text-color: #333;
+            --light-text-color: #666;
+            --border-color: #e0e0e0;
+            --success-color: #28a745;
+            --warning-color: #ffc107;
+            --danger-color: #dc3545;
+            --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.05);
+            --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --shadow-heavy: 0 8px 24px rgba(0, 0, 0, 0.12);
+            --border-radius: 8px;
+            --transition-fast: 0.2s ease;
+            --transition-medium: 0.3s ease;
+            --transition-slow: 0.5s ease;
+        }
+
+        /* --- Dark Mode Variables --- */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary-color: #e0e0e0;
+                --secondary-color: #4dabf7;
+                --background-color: #1a1a1a;
+                --card-background: #2d2d2d;
+                --text-color: #ffffff;
+                --light-text-color: #b0b0b0;
+                --border-color: #404040;
+            }
+        }
+
+        /* --- Global Styles & Reset --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        *:focus {
+            outline: 2px solid var(--secondary-color);
+            outline-offset: 2px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Poppins', 'Cairo', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            transition: background-color var(--transition-medium), color var(--transition-medium);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* --- Skip Link for Accessibility --- */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--secondary-color);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 4px;
+            z-index: 1000;
+            transition: top var(--transition-fast);
+        }
+
+        .skip-link:focus {
+            top: 6px;
+        }
+
+        /* --- Loading Animation --- */
+        .loading {
+            opacity: 0;
+            animation: fadeIn var(--transition-slow) ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* --- Container --- */
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: var(--card-background);
+            box-shadow: var(--shadow-medium);
+            border-radius: var(--border-radius);
+            position: relative;
+            transition: background-color var(--transition-medium), box-shadow var(--transition-medium);
+        }
+
+        /* --- Controls Bar --- */
+        .controls {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            display: flex;
+            gap: 0.5rem;
+            z-index: 10;
+        }
+
+        body[dir="rtl"] .controls {
+            right: auto;
+            left: 1.5rem;
+        }
+
+        .control-btn {
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Poppins', 'Cairo', sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all var(--transition-fast);
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .control-btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-light);
+        }
+
+        .control-btn:active {
+            transform: translateY(0);
+        }
+
+        .control-btn:focus {
+            outline: 2px solid var(--warning-color);
+            outline-offset: 2px;
+        }
+
+        /* --- Header & Personal Details --- */
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .header h1 {
+            color: var(--primary-color);
+            font-size: clamp(2rem, 5vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+            transition: color var(--transition-medium);
+        }
+
+        .personal-details {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem 2rem;
+            margin-top: 1rem;
+            color: var(--light-text-color);
+        }
+
+        .personal-details span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: color var(--transition-fast);
+        }
+
+        .personal-details span:hover {
+            color: var(--secondary-color);
+        }
+
+        .personal-details svg {
+            width: 16px;
+            height: 16px;
+            fill: var(--secondary-color);
+            flex-shrink: 0;
+        }
+
+        /* --- Section Styling --- */
+        .section {
+            margin-bottom: 2rem;
+            scroll-margin-top: 2rem;
+        }
+
+        .section-title {
+            font-size: clamp(1.3rem, 4vw, 1.5rem);
+            font-weight: 600;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            transition: color var(--transition-medium);
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--warning-color);
+            transition: width var(--transition-medium);
+        }
+
+        .section:hover .section-title::after {
+            width: 100%;
+        }
+
+        /* --- Work Experience --- */
+        .experience-item {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            transition: all var(--transition-fast);
+            position: relative;
+        }
+
+        .experience-item:hover {
+            background-color: var(--background-color);
+            box-shadow: var(--shadow-light);
+            transform: translateX(5px);
+        }
+
+        body[dir="rtl"] .experience-item:hover {
+            transform: translateX(-5px);
+        }
+
+        .experience-date {
+            flex-shrink: 0;
+            width: 120px;
+            color: var(--light-text-color);
+            text-align: right;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        body[dir="rtl"] .experience-date {
+            text-align: left;
+        }
+
+        .experience-content h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-color);
+            margin-bottom: 0.25rem;
+        }
+
+        .experience-content h4 {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-content ul {
+            list-style-type: none;
+            padding-left: 0;
+            color: var(--light-text-color);
+        }
+
+        .experience-content ul li {
+            margin-bottom: 0.25rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .experience-content ul li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        body[dir="rtl"] .experience-content ul li {
+            padding-left: 0;
+            padding-right: 1.5rem;
+        }
+
+        body[dir="rtl"] .experience-content ul li::before {
+            left: auto;
+            right: 0;
+        }
+
+        /* --- Skills --- */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .skill-tag {
+            background: linear-gradient(135deg, #e7f3ff, #cce7ff);
+            color: #0056b3;
+            padding: 0.4rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all var(--transition-fast);
+            cursor: default;
+            border: 1px solid transparent;
+        }
+
+        .skill-tag:hover {
+            background: linear-gradient(135deg, #cce7ff, #99d6ff);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-light);
+            border-color: var(--secondary-color);
+        }
+
+        /* --- Other Skills --- */
+        .other-skills-list {
+            list-style: none;
+            padding-left: 0;
+            columns: 2;
+            column-gap: 2rem;
+        }
+
+        .other-skills-list li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+            break-inside: avoid;
+        }
+
+        .other-skills-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success-color);
+            font-weight: bold;
+        }
+
+        body[dir="rtl"] .other-skills-list li {
+            padding-left: 0;
+            padding-right: 1.5rem;
+        }
+
+        body[dir="rtl"] .other-skills-list li::before {
+            left: auto;
+            right: 0;
+        }
+
+        /* --- Education & Certificates --- */
+        .edu-cert-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--border-color);
+            transition: all var(--transition-fast);
+        }
+
+        .edu-cert-item:last-child {
+            border-bottom: none;
+        }
+
+        .edu-cert-item:hover {
+            background-color: var(--background-color);
+            padding-left: 1rem;
+            padding-right: 1rem;
+            border-radius: var(--border-radius);
+            margin: 0 -1rem;
+        }
+
+        .edu-cert-item .info h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+
+        .edu-cert-item .info p {
+            color: var(--light-text-color);
+            font-size: 0.9rem;
+        }
+
+        .edu-cert-item .date {
+            color: var(--light-text-color);
+            font-size: 0.9rem;
+            white-space: nowrap;
+            margin-left: 1rem;
+            font-weight: 500;
+        }
+
+        body[dir="rtl"] .edu-cert-item .date {
+            margin-left: 0;
+            margin-right: 1rem;
+        }
+
+        /* --- Footer --- */
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--light-text-color);
+        }
+
+        .footer a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all var(--transition-fast);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+        }
+
+        .footer a:hover {
+            background-color: var(--secondary-color);
+            color: white;
+            transform: translateY(-1px);
+        }
+
+        /* --- Print Styles --- */
+        @media print {
+            .controls {
+                display: none !important;
+            }
+            
+            .container {
+                box-shadow: none;
+                margin: 0;
+                padding: 1rem;
+            }
+            
+            .section {
+                break-inside: avoid;
+            }
+            
+            .experience-item {
+                break-inside: avoid;
+            }
+            
+            body {
+                background: white !important;
+                color: black !important;
+            }
+            
+            .skill-tag {
+                border: 1px solid #ccc !important;
+                background: white !important;
+                color: black !important;
+            }
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+            
+            .controls {
+                position: static;
+                justify-content: center;
+                margin-bottom: 1rem;
+                flex-wrap: wrap;
+            }
+            
+            .experience-item {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .experience-date {
+                text-align: left;
+                width: 100%;
+                margin-bottom: 0.25rem;
+                font-weight: 600;
+                color: var(--secondary-color);
+            }
+            
+            body[dir="rtl"] .experience-date {
+                text-align: right;
+            }
+            
+            .other-skills-list {
+                columns: 1;
+            }
+            
+            .personal-details {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+            }
+            
+            .edu-cert-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.25rem;
+            }
+            
+            .edu-cert-item .date {
+                margin: 0;
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                margin: 0.5rem;
+                padding: 1rem;
+            }
+            
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section-title {
+                font-size: 1.2rem;
+            }
+            
+            .skills-grid {
+                gap: 0.5rem;
+            }
+            
+            .skill-tag {
+                font-size: 0.8rem;
+                padding: 0.3rem 0.6rem;
+            }
+        }
+
+        /* --- Reduced Motion Support --- */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+            
+            html {
+                scroll-behavior: auto;
+            }
+        }
+
+        /* --- High Contrast Support --- */
+        @media (prefers-contrast: high) {
+            :root {
+                --border-color: #000000;
+                --light-text-color: #000000;
+            }
+            
+            .skill-tag {
+                border: 2px solid #000000;
+            }
+        }
+    </style>
 </head>
-<body dir="ltr">
+<body dir="ltr" class="loading">
+    <!-- Skip Link for Screen Readers -->
+    <a href="#main-content" class="skip-link">تخطي إلى المحتوى الرئيسي</a>
 
     <div class="container">
-        <button id="lang-toggle">
-            <!-- أيقونة SVG للغة -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
-                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 8C5.23 6.44 6.74 5.15 8.59 4.44 7.99 5.55 7.53 6.75 7.21 8H4.26zm.47 4H7.2c-.05.33-.08.66-.08 1s.03.67.08 1H4.73c-.09-.33-.15-.66-.15-1s.06-.67.15-1zm2.53 4H7.21c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95 3.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c.32 1.25.78 2.45 1.38 3.56-1.84.63-3.37 1.91-4.33 3.56zM13 12c0-.34-.03-.67-.08-1h-1.84c-.05.33-.08.66-.08 1s.03.67.08 1h1.84c.05-.33.08-.66.08-1zm1.79 4h2.95c.32-1.25.78-2.45 1.38-3.56-1.84.63-3.37-1.91-4.33-3.56zM19.74 12c.09.33.15.66.15 1s-.06.67-.15 1h-2.92c.05-.33.08-.66.08-1s-.03-.67-.08-1h2.92z"/>
-            </svg>
-            <span data-lang="lang_toggle">العربية</span>
-        </button>
-        <br>
+        <!-- Controls -->
+        <div class="controls">
+            <button id="lang-toggle" class="control-btn" data-lang="lang_toggle" aria-label="تبديل اللغة">
+                <span aria-hidden="true">🌐</span>
+                العربية
+            </button>
+            <button id="print-btn" class="control-btn" aria-label="طباعة السيرة الذاتية">
+                <span aria-hidden="true">🖨️</span>
+                <span data-lang="print">طباعة</span>
+            </button>
+        </div>
 
         <header class="header">
             <h1 data-lang="name">Ayman Khaled Yahya Al-mehanni</h1>
             <div class="personal-details">
                 <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
-                    <span data-lang="email">AYMANALMEHANNI@GMAIL.COM</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                        <title>البريد الإلكتروني</title>
+                        <path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/>
+                    </svg>
+                    <a href="mailto:aymanalmehanni@gmail.com" data-lang="email" aria-label="إرسال بريد إلكتروني">AYMANALMEHANNI@GMAIL.COM</a>
                 </span>
                 <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-                    <span data-lang="phone">0509312930</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                        <title>رقم الهاتف</title>
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                    <a href="tel:+966509312930" data-lang="phone" aria-label="الاتصال بالهاتف">0509312930</a>
                 </span>
                 <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                        <title>تاريخ الميلاد</title>
+                        <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+                    </svg>
                     <span data-lang="dob">Aug 28, 1999</span>
                 </span>
                 <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                        <title>الجنسية</title>
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                    </svg>
                     <span data-lang="nationality">Yemeni</span>
                 </span>
                 <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                        <title>العنوان</title>
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    </svg>
                     <span data-lang="address">Saudi Arabia</span>
                 </span>
             </div>
         </header>
 
-        <main>
+        <main id="main-content">
             <!-- Work Experience Section -->
-            <section class="section">
+            <section class="section" id="experience">
                 <h2 class="section-title" data-lang="work_experience">Work Experience</h2>
                 
-                <div class="experience-item">
+                <article class="experience-item">
                     <div class="experience-date" data-lang="exp1_date">2022 – 2025</div>
                     <div class="experience-content">
                         <h3 data-lang="exp1_title">Financial Operations Specialist</h3>
@@ -61,9 +700,9 @@
                             <li data-lang="exp1_desc3">Ensured compliance with financial policies and procedures in all operations.</li>
                         </ul>
                     </div>
-                </div>
+                </article>
 
-                <div class="experience-item">
+                <article class="experience-item">
                     <div class="experience-date" data-lang="exp2_date">2022</div>
                     <div class="experience-content">
                         <h3 data-lang="exp2_title">Freelancer (Alrbea Project)</h3>
@@ -76,9 +715,9 @@
                             <li data-lang="exp2_desc5">Problem fixing and debugging.</li>
                         </ul>
                     </div>
-                </div>
+                </article>
                 
-                <div class="experience-item">
+                <article class="experience-item">
                     <div class="experience-date" data-lang="exp3_date">Apr 2021 – Sep 2021</div>
                     <div class="experience-content">
                         <h3 data-lang="exp3_title">Developer (Twfeq Platform)</h3>
@@ -90,9 +729,9 @@
                             <li data-lang="exp3_desc4">Deployed applications to Azure Cloud.</li>
                         </ul>
                     </div>
-                </div>
+                </article>
 
-                <div class="experience-item">
+                <article class="experience-item">
                     <div class="experience-date" data-lang="exp4_date">Apr 2020 – Jun 2020</div>
                     <div class="experience-content">
                         <h3 data-lang="exp4_title">Developer (Accounting System Project)</h3>
@@ -104,9 +743,9 @@
                             <li data-lang="exp4_desc4">Contributed to team effort by accomplishing related results as needed.</li>
                         </ul>
                     </div>
-                </div>
+                </article>
 
-                <div class="experience-item">
+                <article class="experience-item">
                     <div class="experience-date" data-lang="exp5_date">Jan 2019 – Aug 2019</div>
                     <div class="experience-content">
                         <h3 data-lang="exp5_title">Project Manager & Developer (Institutes Nawi App)</h3>
@@ -119,9 +758,9 @@
                             <li data-lang="exp5_desc5">Handled digital marketing on social media (Facebook, Twitter, YouTube).</li>
                         </ul>
                     </div>
-                </div>
+                </article>
                 
-                <div class="experience-item">
+                <article class="experience-item">
                     <div class="experience-date" data-lang="exp6_date">2017 – 2018</div>
                     <div class="experience-content">
                         <h3 data-lang="exp6_title">Freelancer</h3>
@@ -133,128 +772,128 @@
                             <li data-lang="exp6_desc4">Data entry for Modern Pharma Company.</li>
                         </ul>
                     </div>
-                </div>
+                </article>
             </section>
 
             <!-- Education Section -->
-            <section class="section">
+            <section class="section" id="education">
                 <h2 class="section-title" data-lang="education">Education</h2>
-                 <div class="edu-cert-item">
+                <article class="edu-cert-item">
                     <div class="info">
                         <h3 data-lang="edu1_degree">Bachelor's Degree in Programming</h3>
                         <p data-lang="edu1_school">Sana'a Community College</p>
                     </div>
                     <div class="date" data-lang="edu1_date">Oct 2015 – Jul 2019</div>
-                </div>
-                <div class="edu-cert-item">
+                </article>
+                <article class="edu-cert-item">
                     <div class="info">
                         <h3 data-lang="edu2_degree">High School</h3>
                         <p data-lang="edu2_school">Omar Al-Mukhtar School, Sana'a</p>
                     </div>
                     <div class="date" data-lang="edu2_date">Jul 2013</div>
-                </div>
+                </article>
             </section>
 
-             <!-- Certificates Section -->
-            <section class="section">
+            <!-- Certificates Section -->
+            <section class="section" id="certificates">
                 <h2 class="section-title" data-lang="certificates">Certificates & Courses</h2>
-                <div class="edu-cert-item">
+                <article class="edu-cert-item">
                     <div class="info">
                         <h3 data-lang="cert1_name">Advanced English Language Course</h3>
                         <p data-lang="cert1_issuer">Exceed, English Learning Centers</p>
                     </div>
                     <div class="date" data-lang="cert1_date">Jan 2020 - Feb 2020</div>
-                </div>
-                <div class="edu-cert-item">
+                </article>
+                <article class="edu-cert-item">
                     <div class="info">
                         <h3 data-lang="cert2_name">Digital Marketing</h3>
                         <p data-lang="cert2_issuer">Google</p>
                     </div>
                     <div class="date" data-lang="cert2_date">Jun 2020</div>
-                </div>
-                <div class="edu-cert-item">
+                </article>
+                <article class="edu-cert-item">
                     <div class="info">
                         <h3 data-lang="cert3_name">ICDL</h3>
                         <p data-lang="cert3_issuer">Rights way for Rights and Development</p>
                     </div>
                     <div class="date" data-lang="cert3_date">Jun 2018</div>
-                </div>
-                <div class="edu-cert-item">
+                </article>
+                <article class="edu-cert-item">
                     <div class="info">
                         <h3 data-lang="cert4_name">CompTIA A+</h3>
                         <p data-lang="cert4_issuer">Certification</p>
                     </div>
                     <div class="date" data-lang="cert4_date">Nov 2016 - Dec 2016</div>
-                </div>
-                <div class="edu-cert-item">
+                </article>
+                <article class="edu-cert-item">
                     <div class="info">
                         <h3 data-lang="cert5_name">English Language Course, Level 2</h3>
                         <p data-lang="cert5_issuer">Seeds Education Institute</p>
                     </div>
                     <div class="date" data-lang="cert5_date">Jul 2014 - Aug 2014</div>
-                </div>
+                </article>
             </section>
 
             <!-- Language Skills Section -->
-            <section class="section">
+            <section class="section" id="languages">
                 <h2 class="section-title" data-lang="language_skills">Language Skills</h2>
-                <div class="edu-cert-item">
+                <article class="edu-cert-item">
                     <div class="info">
                         <h3 data-lang="lang_ar">Arabic</h3>
                     </div>
                     <div class="date" data-lang="lang_ar_level">Native (Excellent Spoken & Written)</div>
-                </div>
-                <div class="edu-cert-item">
+                </article>
+                <article class="edu-cert-item">
                     <div class="info">
                         <h3 data-lang="lang_en">English</h3>
                     </div>
                     <div class="date" data-lang="lang_en_level">Very Good (Spoken & Written)</div>
-                </div>
+                </article>
             </section>
 
-            <!-- Programmer Skills Section -->
-            <section class="section">
+            <!-- Technical Skills Section -->
+            <section class="section" id="technical-skills">
                 <h2 class="section-title" data-lang="programmer_skills">Technical Skills</h2>
-                <div class="skills-grid">
-                    <span class="skill-tag">React</span>
-                    <span class="skill-tag">React Native</span>
-                    <span class="skill-tag">Node.js</span>
-                    <span class="skill-tag">Flutter</span>
-                    <span class="skill-tag">ASP.NET Core</span>
-                    <span class="skill-tag">SQL Server</span>
-                    <span class="skill-tag">MySQL</span>
-                    <span class="skill-tag">SQLite</span>
-                    <span class="skill-tag">C#</span>
-                    <span class="skill-tag">Java</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">HTML5</span>
-                    <span class="skill-tag">CSS3</span>
-                    <span class="skill-tag">C/C++</span>
-                    <span class="skill-tag">Dart</span>
-                    <span class="skill-tag">jQuery</span>
-                    <span class="skill-tag">Next.js</span>
-                    <span class="skill-tag">Vue.js</span>
-                    <span class="skill-tag">Bootstrap</span>
-                    <span class="skill-tag">TailwindCSS</span>
-                    <span class="skill-tag">Git</span>
-                    <span class="skill-tag">Firebase</span>
-                    <span class="skill-tag">MongoDB</span>
-                    <span class="skill-tag">Redis</span>
-                    <span class="skill-tag">Redux</span>
-                    <span class="skill-tag">Webpack</span>
-                    <span class="skill-tag">Android</span>
-                    <span class="skill-tag">iOS</span>
-                    <span class="skill-tag">UI/UX Design</span>
-                    <span class="skill-tag">Figma</span>
-                    <span class="skill-tag">Adobe XD</span>
-                    <span class="skill-tag">Photoshop</span>
-                    <span class="skill-tag">Illustrator</span>
+                <div class="skills-grid" role="list">
+                    <span class="skill-tag" role="listitem">React</span>
+                    <span class="skill-tag" role="listitem">React Native</span>
+                    <span class="skill-tag" role="listitem">Node.js</span>
+                    <span class="skill-tag" role="listitem">Flutter</span>
+                    <span class="skill-tag" role="listitem">ASP.NET Core</span>
+                    <span class="skill-tag" role="listitem">SQL Server</span>
+                    <span class="skill-tag" role="listitem">MySQL</span>
+                    <span class="skill-tag" role="listitem">SQLite</span>
+                    <span class="skill-tag" role="listitem">C#</span>
+                    <span class="skill-tag" role="listitem">Java</span>
+                    <span class="skill-tag" role="listitem">JavaScript</span>
+                    <span class="skill-tag" role="listitem">Python</span>
+                    <span class="skill-tag" role="listitem">HTML5</span>
+                    <span class="skill-tag" role="listitem">CSS3</span>
+                    <span class="skill-tag" role="listitem">C/C++</span>
+                    <span class="skill-tag" role="listitem">Dart</span>
+                    <span class="skill-tag" role="listitem">jQuery</span>
+                    <span class="skill-tag" role="listitem">Next.js</span>
+                    <span class="skill-tag" role="listitem">Vue.js</span>
+                    <span class="skill-tag" role="listitem">Bootstrap</span>
+                    <span class="skill-tag" role="listitem">TailwindCSS</span>
+                    <span class="skill-tag" role="listitem">Git</span>
+                    <span class="skill-tag" role="listitem">Firebase</span>
+                    <span class="skill-tag" role="listitem">MongoDB</span>
+                    <span class="skill-tag" role="listitem">Redis</span>
+                    <span class="skill-tag" role="listitem">Redux</span>
+                    <span class="skill-tag" role="listitem">Webpack</span>
+                    <span class="skill-tag" role="listitem">Android</span>
+                    <span class="skill-tag" role="listitem">iOS</span>
+                    <span class="skill-tag" role="listitem">UI/UX Design</span>
+                    <span class="skill-tag" role="listitem">Figma</span>
+                    <span class="skill-tag" role="listitem">Adobe XD</span>
+                    <span class="skill-tag" role="listitem">Photoshop</span>
+                    <span class="skill-tag" role="listitem">Illustrator</span>
                 </div>
             </section>
 
             <!-- Other Skills Section -->
-            <section class="section">
+            <section class="section" id="other-skills">
                 <h2 class="section-title" data-lang="other_skills">Other Skills</h2>
                 <ul class="other-skills-list">
                     <li data-lang="oskill1">Excellent in using Microsoft Office Applications.</li>
@@ -271,12 +910,428 @@
         </main>
         
         <footer class="footer">
-            <a href="https://github.com/aymanplus" target="_blank" rel="noopener noreferrer" data-lang="github_profile">GitHub: AymanAlmehanni</a>
+            <a href="https://github.com/AymanAlmehanni" target="_blank" rel="noopener noreferrer" data-lang="github_profile" aria-label="زيارة ملف GitHub">GitHub: AymanAlmehanni</a>
         </footer>
-
     </div>
 
-    <!-- ربط ملف الجافاسكريبت الخارجي -->
-    <script src="js/script.js"></script>
+    <script>
+        // Enhanced translations with new features
+        const translations = {
+            en: {
+                // Toggle & Controls
+                lang_toggle: "العربية",
+                print: "Print",
+                // Personal Details
+                name: "Ayman Khaled Yahya Al-mehanni",
+                email: "AYMANALMEHANNI@GMAIL.COM",
+                phone: "0509312930",
+                dob: "Aug 28, 1999",
+                nationality: "Yemeni",
+                address: "Saudi Arabia",
+                // Section Titles
+                work_experience: "Work Experience",
+                education: "Education",
+                certificates: "Certificates & Courses",
+                language_skills: "Language Skills",
+                programmer_skills: "Technical Skills",
+                other_skills: "Other Skills",
+                // Experience 1
+                exp1_date: "2022 – 2025",
+                exp1_title: "Financial Operations Specialist",
+                exp1_company: "Financial Sector",
+                exp1_desc1: "Managed and reconciled financial accounts to ensure accuracy.",
+                exp1_desc2: "Processed a high volume of domestic and international financial transfers.",
+                exp1_desc3: "Ensured compliance with financial policies and procedures in all operations.",
+                // Experience 2
+                exp2_date: "2022",
+                exp2_title: "Freelancer (Alrbea Project)",
+                exp2_company: "Alrbea (Saudia)",
+                exp2_desc1: "Development of the website and Android application.",
+                exp2_desc2: "Development of React, React Native, and Flutter projects.",
+                exp2_desc3: "Collaborated with a team using Bitbucket for version control.",
+                exp2_desc4: "Designed UI/UX using Adobe XD and Figma.",
+                exp2_desc5: "Problem fixing and debugging.",
+                // Experience 3
+                exp3_date: "Apr 2021 – Sep 2021",
+                exp3_title: "Developer (Twfeq Platform)",
+                exp3_company: "Twfeq Platform",
+                exp3_desc1: "Developed the main website.",
+                exp3_desc2: "Built an application and site for contractors in Saudi Arabia.",
+                exp3_desc3: "Developed using React, Node.js, SQL Server, ASP.NET Core, and Android.",
+                exp3_desc4: "Deployed applications to Azure Cloud.",
+                // Experience 4
+                exp4_date: "Apr 2020 – Jun 2020",
+                exp4_title: "Developer (Accounting System Project)",
+                exp4_company: "Development Project",
+                exp4_desc1: "Development of the website, Android, and iOS applications.",
+                exp4_desc2: "Developed using React, Node.js, SQL Server, ASP.NET Core.",
+                exp4_desc3: "Deployed applications to Azure Cloud.",
+                exp4_desc4: "Contributed to team effort by accomplishing related results as needed.",
+                // Experience 5
+                exp5_date: "Jan 2019 – Aug 2019",
+                exp5_title: "Project Manager & Developer (Institutes Nawi App)",
+                exp5_company: "Nawi App Project",
+                exp5_desc1: "Managed project lifecycle and development.",
+                exp5_desc2: "Developed using Flutter, Dart, SQLite, SQL Server, and ASP.NET Web API.",
+                exp5_desc3: "Created the control panel using React.js.",
+                exp5_desc4: "Deployed to Google Cloud Platform.",
+                exp5_desc5: "Handled digital marketing on social media (Facebook, Twitter, YouTube).",
+                // Experience 6
+                exp6_date: "2017 – 2018",
+                exp6_title: "Freelancer",
+                exp6_company: "Mostaql & Khamsat",
+                exp6_desc1: "Developed the Android Awrad Application.",
+                exp6_desc2: "Web development using JavaScript, HTML5, CSS.",
+                exp6_desc3: "Designed UI/UX for websites and apps using Adobe XD.",
+                exp6_desc4: "Data entry for Modern Pharma Company.",
+                // Education
+                edu1_degree: "Bachelor's Degree in Programming",
+                edu1_school: "Sana'a Community College",
+                edu1_date: "Oct 2015 – Jul 2019",
+                edu2_degree: "High School",
+                edu2_school: "Omar Al-Mukhtar School, Sana'a",
+                edu2_date: "Jul 2013",
+                // Certificates
+                cert1_name: "Advanced English Language Course",
+                cert1_issuer: "Exceed, English Learning Centers",
+                cert1_date: "Jan 2020 - Feb 2020",
+                cert2_name: "Digital Marketing",
+                cert2_issuer: "Google",
+                cert2_date: "Jun 2020",
+                cert3_name: "ICDL",
+                cert3_issuer: "Rights way for Rights and Development",
+                cert3_date: "Jun 2018",
+                cert4_name: "CompTIA A+",
+                cert4_issuer: "Certification",
+                cert4_date: "Nov 2016 - Dec 2016",
+                cert5_name: "English Language Course, Level 2",
+                cert5_issuer: "Seeds Education Institute",
+                cert5_date: "Jul 2014 - Aug 2014",
+                // Language Skills
+                lang_ar: "Arabic",
+                lang_ar_level: "Native (Excellent Spoken & Written)",
+                lang_en: "English",
+                lang_en_level: "Very Good (Spoken & Written)",
+                // Other Skills
+                oskill1: "Excellent in using Microsoft Office Applications.",
+                oskill2: "Typing speed: 40 English WPM.",
+                oskill3: "Proficient with office equipment (photocopier, scanner, fax).",
+                oskill4: "Self-motivated with minimum supervision.",
+                oskill5: "Ability to work within a team or individually.",
+                oskill6: "Ability to handle stress and pressure.",
+                oskill7: "Well-organized, fast learner, and able to write reports.",
+                oskill8: "Excellent analytical and problem-solving skills.",
+                oskill9: "Ability to collaborate cross-functionally.",
+                // Footer
+                github_profile: "GitHub: AymanAlmehanni"
+            },
+            ar: {
+                // Toggle & Controls
+                lang_toggle: "English",
+                print: "طباعة",
+                // Personal Details
+                name: "أيمن خالد يحيى المهني",
+                email: "AYMANALMEHANNI@GMAIL.COM",
+                phone: "0509312930",
+                dob: "28 أغسطس 1999",
+                nationality: "يمني",
+                address: "المملكة العربية السعودية",
+                // Section Titles
+                work_experience: "الخبرة العملية",
+                education: "التعليم",
+                certificates: "الشهادات والدورات",
+                language_skills: "المهارات اللغوية",
+                programmer_skills: "المهارات التقنية",
+                other_skills: "مهارات أخرى",
+                // Experience 1
+                exp1_date: "2022 – 2025",
+                exp1_title: "أخصائي عمليات مالية",
+                exp1_company: "قطاع مالي",
+                exp1_desc1: "إدارة وتسوية الحسابات المالية لضمان الدقة.",
+                exp1_desc2: "معالجة حجم كبير من التحويلات المالية المحلية والدولية.",
+                exp1_desc3: "ضمان الامتثال للسياسات والإجراءات المالية في جميع العمليات.",
+                // Experience 2
+                exp2_date: "2022",
+                exp2_title: "مطور مستقل (مشروع الربيع)",
+                exp2_company: "الربيع (السعودية)",
+                exp2_desc1: "تطوير الموقع الإلكتروني وتطبيق أندرويد.",
+                exp2_desc2: "تطوير مشاريع باستخدام React، React Native، و Flutter.",
+                exp2_desc3: "التعاون مع الفريق باستخدام Bitbucket لإدارة الإصدارات.",
+                exp2_desc4: "تصميم واجهات المستخدم وتجربة المستخدم (UI/UX) باستخدام Adobe XD و Figma.",
+                exp2_desc5: "إصلاح المشاكل والأخطاء البرمجية.",
+                // Experience 3
+                exp3_date: "أبريل 2021 – سبتمبر 2021",
+                exp3_title: "مطور (منصة توفيق)",
+                exp3_company: "منصة توفيق",
+                exp3_desc1: "تطوير الموقع الرئيسي للمنصة.",
+                exp3_desc2: "بناء تطبيق وموقع للمقاولين في المملكة العربية السعودية.",
+                exp3_desc3: "التطوير باستخدام React, Node.js, SQL Server, ASP.NET Core, و Android.",
+                exp3_desc4: "نشر التطبيقات على سحابة Azure.",
+                // Experience 4
+                exp4_date: "أبريل 2020 – يونيو 2020",
+                exp4_title: "مطور (مشروع نظام محاسبي)",
+                exp4_company: "مشروع تطويري",
+                exp4_desc1: "تطوير موقع إلكتروني وتطبيقات Android و iOS.",
+                exp4_desc2: "التطوير باستخدام React, Node.js, SQL Server, و ASP.NET Core.",
+                exp4_desc3: "نشر التطبيقات على سحابة Azure.",
+                exp4_desc4: "المساهمة في جهود الفريق من خلال تحقيق النتائج ذات الصلة حسب الحاجة.",
+                // Experience 5
+                exp5_date: "يناير 2019 – أغسطس 2019",
+                exp5_title: "مدير مشروع ومطور (تطبيق معاهد ناوي)",
+                exp5_company: "مشروع تطبيق ناوي",
+                exp5_desc1: "إدارة دورة حياة المشروع وتطويره.",
+                exp5_desc2: "التطوير باستخدام Flutter, Dart, SQLite, SQL Server, و ASP.NET Web API.",
+                exp5_desc3: "إنشاء لوحة التحكم باستخدام React.js.",
+                exp5_desc4: "النشر على منصة Google Cloud.",
+                exp5_desc5: "إدارة التسويق الرقمي عبر وسائل التواصل الاجتماعي (فيسبوك، تويتر، يوتيوب).",
+                // Experience 6
+                exp6_date: "2017 – 2018",
+                exp6_title: "مطور مستقل",
+                exp6_company: "مستقل وخمسات",
+                exp6_desc1: "تطوير تطبيق أوراد للأندرويد.",
+                exp6_desc2: "تطوير الويب باستخدام JavaScript, HTML5, CSS.",
+                exp6_desc3: "تصميم واجهات المستخدم وتجربة المستخدم للمواقع والتطبيقات باستخدام Adobe XD.",
+                exp6_desc4: "إدخال بيانات لشركة Modern Pharma.",
+                // Education
+                edu1_degree: "درجة البكالوريوس في البرمجة",
+                edu1_school: "كلية مجتمع صنعاء",
+                edu1_date: "أكتوبر 2015 – يوليو 2019",
+                edu2_degree: "الثانوية العامة",
+                edu2_school: "مدرسة عمر المختار، صنعاء",
+                edu2_date: "يوليو 2013",
+                // Certificates
+                cert1_name: "دورة لغة إنجليزية متقدمة",
+                cert1_issuer: "مراكز إكسيد لتعليم اللغة الإنجليزية",
+                cert1_date: "يناير 2020 - فبراير 2020",
+                cert2_name: "التسويق الرقمي",
+                cert2_issuer: "Google",
+                cert2_date: "يونيو 2020",
+                cert3_name: "الرخصة الدولية لقيادة الحاسوب (ICDL)",
+                cert3_issuer: "رايتس واي للحقوق والتنمية",
+                cert3_date: "يونيو 2018",
+                cert4_name: "شهادة +CompTIA A",
+                cert4_issuer: "شهادة معتمدة",
+                cert4_date: "نوفمبر 2016 - ديسمبر 2016",
+                cert5_name: "دورة لغة إنجليزية، المستوى الثاني",
+                cert5_issuer: "معهد سيدز التعليمي",
+                cert5_date: "يوليو 2014 - أغسطس 2014",
+                // Language Skills
+                lang_ar: "العربية",
+                lang_ar_level: "اللغة الأم (ممتاز تحدثاً وكتابةً)",
+                lang_en: "الإنجليزية",
+                lang_en_level: "جيد جداً (تحدثاً وكتابةً)",
+                // Other Skills
+                oskill1: "إجادة تامة لتطبيقات مايكروسوفت أوفيس.",
+                oskill2: "سرعة طباعة 40 كلمة إنجليزية في الدقيقة.",
+                oskill3: "كفاءة في استخدام المعدات المكتبية (طابعة، ماسح ضوئي، فاكس).",
+                oskill4: "القدرة على العمل بشكل مستقل وبأقل قدر من الإشراف.",
+                oskill5: "القدرة على العمل ضمن فريق أو بشكل فردي.",
+                oskill6: "القدرة على التعامل مع ضغوط العمل.",
+                oskill7: "منظم، سريع التعلم، والقدرة على كتابة التقارير.",
+                oskill8: "مهارات تحليلية ممتازة وقدرة على حل المشكلات المعقدة.",
+                oskill9: "القدرة على التعاون بين الأقسام المختلفة.",
+                // Footer
+                github_profile: "ملف GitHub: AymanAlmehanni"
+            }
+        };
+
+        // Enhanced JavaScript functionality
+        class CVManager {
+            constructor() {
+                this.currentLang = 'en';
+                this.init();
+            }
+
+            init() {
+                this.bindEvents();
+                this.addLoadingAnimation();
+                this.addKeyboardNavigation();
+                this.addErrorHandling();
+            }
+
+            bindEvents() {
+                // Language toggle
+                const langToggle = document.getElementById('lang-toggle');
+                if (langToggle) {
+                    langToggle.addEventListener('click', () => this.switchLanguage());
+                }
+
+                // Print functionality
+                const printBtn = document.getElementById('print-btn');
+                if (printBtn) {
+                    printBtn.addEventListener('click', () => this.printCV());
+                }
+
+                // Keyboard shortcuts
+                document.addEventListener('keydown', (e) => this.handleKeyboardShortcuts(e));
+            }
+
+            switchLanguage() {
+                try {
+                    this.currentLang = this.currentLang === 'en' ? 'ar' : 'en';
+
+                    // Update document attributes
+                    document.documentElement.lang = this.currentLang;
+                    document.body.dir = this.currentLang === 'ar' ? 'rtl' : 'ltr';
+
+                    // Update meta description
+                    const metaDesc = document.querySelector('meta[name="description"]');
+                    if (metaDesc && this.currentLang === 'ar') {
+                        metaDesc.content = 'أيمن المهني - أخصائي عمليات مالية ومطور متكامل خبير في React، Node.js، Flutter، والأنظمة المالية.';
+                    }
+
+                    // Update all translatable elements
+                    document.querySelectorAll('[data-lang]').forEach(element => {
+                        const key = element.getAttribute('data-lang');
+                        if (translations[this.currentLang][key]) {
+                            element.innerHTML = translations[this.currentLang][key];
+                        }
+                    });
+
+                    // Announce language change for screen readers
+                    this.announceToScreenReader(`Language switched to ${this.currentLang === 'ar' ? 'Arabic' : 'English'}`);
+                } catch (error) {
+                    console.error('Error switching language:', error);
+                    this.showNotification('خطأ في تبديل اللغة', 'error');
+                }
+            }
+
+            printCV() {
+                try {
+                    // Add print-specific styles
+                    const printStyles = document.createElement('style');
+                    printStyles.textContent = `
+                        @media print {
+                            @page { margin: 0.5in; }
+                            .controls { display: none !important; }
+                            .container { box-shadow: none !important; margin: 0 !important; }
+                        }
+                    `;
+                    document.head.appendChild(printStyles);
+
+                    // Print
+                    window.print();
+
+                    // Remove print styles after printing
+                    setTimeout(() => {
+                        document.head.removeChild(printStyles);
+                    }, 1000);
+                } catch (error) {
+                    console.error('Error printing CV:', error);
+                    this.showNotification('خطأ في الطباعة', 'error');
+                }
+            }
+
+            addLoadingAnimation() {
+                // Remove loading class after page loads
+                window.addEventListener('load', () => {
+                    document.body.classList.remove('loading');
+                });
+            }
+
+            addKeyboardNavigation() {
+                // Add tab navigation for skill tags
+                const skillTags = document.querySelectorAll('.skill-tag');
+                skillTags.forEach(tag => {
+                    tag.setAttribute('tabindex', '0');
+                    tag.addEventListener('keydown', (e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            tag.click();
+                        }
+                    });
+                });
+            }
+
+            handleKeyboardShortcuts(e) {
+                // Ctrl/Cmd + L: Switch language
+                if ((e.ctrlKey || e.metaKey) && e.key === 'l') {
+                    e.preventDefault();
+                    this.switchLanguage();
+                }
+
+                // Ctrl/Cmd + P: Print
+                if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
+                    e.preventDefault();
+                    this.printCV();
+                }
+            }
+
+            addErrorHandling() {
+                window.addEventListener('error', (e) => {
+                    console.error('JavaScript error:', e.error);
+                    this.showNotification('حدث خطأ غير متوقع', 'error');
+                });
+            }
+
+            announceToScreenReader(message) {
+                const announcement = document.createElement('div');
+                announcement.setAttribute('aria-live', 'polite');
+                announcement.setAttribute('aria-atomic', 'true');
+                announcement.style.position = 'absolute';
+                announcement.style.left = '-10000px';
+                announcement.style.width = '1px';
+                announcement.style.height = '1px';
+                announcement.style.overflow = 'hidden';
+                announcement.textContent = message;
+                
+                document.body.appendChild(announcement);
+                
+                setTimeout(() => {
+                    document.body.removeChild(announcement);
+                }, 1000);
+            }
+
+            showNotification(message, type = 'info') {
+                const notification = document.createElement('div');
+                notification.className = `notification notification-${type}`;
+                notification.textContent = message;
+                notification.style.cssText = `
+                    position: fixed;
+                    top: 20px;
+                    right: 20px;
+                    background: ${type === 'error' ? '#dc3545' : '#28a745'};
+                    color: white;
+                    padding: 1rem;
+                    border-radius: 4px;
+                    z-index: 1000;
+                    animation: slideIn 0.3s ease;
+                `;
+                
+                document.body.appendChild(notification);
+                
+                setTimeout(() => {
+                    notification.style.animation = 'slideOut 0.3s ease';
+                    setTimeout(() => {
+                        if (document.body.contains(notification)) {
+                            document.body.removeChild(notification);
+                        }
+                    }, 300);
+                }, 3000);
+            }
+        }
+
+        // Initialize CV Manager when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => new CVManager());
+        } else {
+            new CVManager();
+        }
+
+        // Add slide animations for notification
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideIn {
+                from { transform: translateX(100%); opacity: 0; }
+                to { transform: translateX(0); opacity: 1; }
+            }
+            @keyframes slideOut {
+                from { transform: translateX(0); opacity: 1; }
+                to { transform: translateX(100%); opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
 </body>
 </html>
+
