@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ayman Al-mehanni - Experienced Financial Operations Specialist and Full-Stack Developer with expertise in React, Node.js, Flutter, and financial systems.">
-    <meta name="keywords" content="Ayman Al-mehanni, Financial Operations, Full-Stack Developer, React, Node.js, Flutter, Programming, Saudi Arabia">
+    <meta name="description" content="Ayman Al-mehanni - Experienced Flutter Developer and Financial Services Officer with expertise in mobile app development, financial systems, React, and Node.js.">
+    <meta name="keywords" content="Ayman Al-mehanni, Flutter Developer, Financial Services, Full-Stack Developer, React, Node.js, Mobile Development, Saudi Arabia">
     <meta name="author" content="Ayman Khaled Yahya Al-mehanni">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Ayman Al-mehanni - CV">
-    <meta property="og:description" content="Experienced Financial Operations Specialist and Full-Stack Developer">
+    <meta property="og:description" content="Experienced Flutter Developer and Financial Services Officer">
     <meta property="og:type" content="profile">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
@@ -18,7 +18,7 @@
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Ayman Al-mehanni - CV">
-    <meta name="twitter:description" content="Experienced Financial Operations Specialist and Full-Stack Developer">
+    <meta name="twitter:description" content="Experienced Flutter Developer and Financial Services Officer">
     
     <!-- Content Security Policy -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data:;">
@@ -43,10 +43,10 @@
             "@type": "PostalAddress",
             "addressCountry": "Saudi Arabia"
         },
-        "jobTitle": "Financial Operations Specialist",
+        "jobTitle": "Flutter Developer & Project Owner",
         "worksFor": {
             "@type": "Organization",
-            "name": "Financial Sector"
+            "name": "Personal Projects"
         },
         "alumniOf": {
             "@type": "EducationalOrganization",
@@ -392,15 +392,14 @@
         .other-skills-list {
             list-style: none;
             padding-left: 0;
-            columns: 2;
-            column-gap: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
         }
 
         .other-skills-list li {
-            margin-bottom: 0.5rem;
             padding-left: 1.5rem;
             position: relative;
-            break-inside: avoid;
         }
 
         .other-skills-list li::before {
@@ -409,6 +408,11 @@
             left: 0;
             color: var(--success-color);
             font-weight: bold;
+        }
+        .other-skills-list li strong {
+            display: block;
+            font-weight: 600;
+            color: var(--text-color);
         }
 
         body[dir="rtl"] .other-skills-list li {
@@ -628,18 +632,18 @@
 </head>
 <body dir="ltr" class="loading">
     <!-- Skip Link for Screen Readers -->
-    <a href="#main-content" class="skip-link">تخطي إلى المحتوى الرئيسي</a>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <div class="container">
         <!-- Controls -->
         <div class="controls">
-            <button id="lang-toggle" class="control-btn" data-lang="lang_toggle" aria-label="تبديل اللغة">
+            <button id="lang-toggle" class="control-btn" data-lang="lang_toggle" aria-label="Switch Language">
                 <span aria-hidden="true">🌐</span>
                 العربية
             </button>
-            <button id="print-btn" class="control-btn" aria-label="طباعة السيرة الذاتية">
+            <button id="print-btn" class="control-btn" aria-label="Print CV">
                 <span aria-hidden="true">🖨️</span>
-                <span data-lang="print">طباعة</span>
+                <span data-lang="print">Print</span>
             </button>
         </div>
 
@@ -648,35 +652,35 @@
             <div class="personal-details">
                 <span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                        <title>البريد الإلكتروني</title>
+                        <title>Email</title>
                         <path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/>
                     </svg>
-                    <a href="mailto:aymanalmehanni@gmail.com" data-lang="email" aria-label="إرسال بريد إلكتروني">AYMANALMEHANNI@GMAIL.COM</a>
+                    <a href="mailto:aymanalmehanni@gmail.com" data-lang="email" aria-label="Send Email">AYMANALMEHANNI@GMAIL.COM</a>
                 </span>
                 <span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                        <title>رقم الهاتف</title>
+                        <title>Phone</title>
                         <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
                     </svg>
-                    <a href="tel:+966509312930" data-lang="phone" aria-label="الاتصال بالهاتف">0509312930</a>
+                    <a href="tel:+966509312930" data-lang="phone" aria-label="Call Phone">0509312930</a>
                 </span>
                 <span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                        <title>تاريخ الميلاد</title>
+                        <title>Date of Birth</title>
                         <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
                     </svg>
                     <span data-lang="dob">Aug 28, 1999</span>
                 </span>
                 <span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                        <title>الجنسية</title>
+                        <title>Nationality</title>
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
                     </svg>
                     <span data-lang="nationality">Yemeni</span>
                 </span>
                 <span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-                        <title>العنوان</title>
+                        <title>Address</title>
                         <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                     </svg>
                     <span data-lang="address">Saudi Arabia</span>
@@ -690,86 +694,58 @@
                 <h2 class="section-title" data-lang="work_experience">Work Experience</h2>
                 
                 <article class="experience-item">
-                    <div class="experience-date" data-lang="exp1_date">2022 – 2025</div>
+                    <div class="experience-date" data-lang="exp1_date">Dec 2024 – Present</div>
                     <div class="experience-content">
-                        <h3 data-lang="exp1_title">Financial Operations Specialist</h3>
-                        <h4 data-lang="exp1_company">Financial Sector</h4>
+                        <h3 data-lang="exp1_title">Flutter Developer & Project Owner</h3>
+                        <h4 data-lang="exp1_company">Sales Memo App - Personal Project</h4>
                         <ul>
-                            <li data-lang="exp1_desc1">Managed and reconciled financial accounts to ensure accuracy.</li>
-                            <li data-lang="exp1_desc2">Processed a high volume of domestic and international financial transfers.</li>
-                            <li data-lang="exp1_desc3">Ensured compliance with financial policies and procedures in all operations.</li>
+                            <li data-lang="exp1_desc1">Developed a comprehensive sales and order management mobile application from concept to deployment using the Flutter framework and Dart.</li>
+                            <li data-lang="exp1_desc2">Engineered a local persistence layer using SQLite for offline-first data management of orders, customers, and complex product structures.</li>
+                            <li data-lang="exp1_desc3">Implemented state management using the Provider package to ensure a reactive, consistent, and maintainable user interface.</li>
+                            <li data-lang="exp1_desc4">Designed a robust backup and restore feature, packaging the SQLite database and images into a single ZIP archive for data portability.</li>
+                            <li data-lang="exp1_desc5">Architected a modular system with distinct models for various product types, including a drawing/sketching feature for custom orders.</li>
                         </ul>
                     </div>
                 </article>
 
                 <article class="experience-item">
-                    <div class="experience-date" data-lang="exp2_date">2022</div>
+                    <div class="experience-date" data-lang="exp2_date">Jan 2025 – Present</div>
                     <div class="experience-content">
-                        <h3 data-lang="exp2_title">Freelancer (Alrbea Project)</h3>
-                        <h4 data-lang="exp2_company">Alrbea (Saudia)</h4>
+                        <h3 data-lang="exp2_title">Lead Flutter Developer & Project Owner</h3>
+                        <h4 data-lang="exp2_company">DafterDiwn (Debt Ledger App) - Personal Project</h4>
                         <ul>
-                            <li data-lang="exp2_desc1">Development of the website and Android application.</li>
-                            <li data-lang="exp2_desc2">Development of React, React Native, and Flutter projects.</li>
-                            <li data-lang="exp2_desc3">Collaborated with a team using Bitbucket for version control.</li>
-                            <li data-lang="exp2_desc4">Designed UI/UX using Adobe XD and Figma.</li>
-                            <li data-lang="exp2_desc5">Problem fixing and debugging.</li>
+                            <li data-lang="exp2_desc1">Architected a sophisticated, offline-first mobile app for managing debts across multiple currencies, using Flutter, Dart, and GoRouter.</li>
+                            <li data-lang="exp2_desc2">Engineered a robust data layer with SQLite, designing a normalized schema and managing database migrations for seamless updates.</li>
+                            <li data-lang="exp2_desc3">Integrated Google Drive API for secure cloud backup/restore, leveraging the private appDataFolder for user data privacy.</li>
+                            <li data-lang="exp2_desc4">Implemented an advanced PDF reporting feature with custom date ranges, multi-currency support, and full Arabic font compatibility.</li>
                         </ul>
                     </div>
                 </article>
                 
                 <article class="experience-item">
-                    <div class="experience-date" data-lang="exp3_date">Apr 2021 – Sep 2021</div>
+                    <div class="experience-date" data-lang="exp3_date">Sep 2019 – Jun 2025</div>
                     <div class="experience-content">
-                        <h3 data-lang="exp3_title">Developer (Twfeq Platform)</h3>
-                        <h4 data-lang="exp3_company">Twfeq Platform</h4>
+                        <h3 data-lang="exp3_title">Financial Services Officer / Teller</h3>
+                        <h4 data-lang="exp3_company">Al-Najm & Al-Amri for Exchange, Sana'a, Yemen</h4>
                         <ul>
-                            <li data-lang="exp3_desc1">Developed the main website.</li>
-                            <li data-lang="exp3_desc2">Built an application and site for contractors in Saudi Arabia.</li>
-                            <li data-lang="exp3_desc3">Developed using React, Node.js, SQL Server, ASP.NET Core, and Android.</li>
-                            <li data-lang="exp3_desc4">Deployed applications to Azure Cloud.</li>
+                            <li data-lang="exp3_desc1">Executed a high volume of foreign currency exchange transactions (buy/sell), ensuring accuracy and adherence to market rates.</li>
+                            <li data-lang="exp3_desc2">Processed domestic and international remittances efficiently through various banking networks.</li>
+                            <li data-lang="exp3_desc3">Conducted daily account settlements and reconciled cash balances to ensure financial integrity.</li>
+                            <li data-lang="exp3_desc4">Managed end-of-day closing procedures, including balancing accounts and preparing summary reports.</li>
                         </ul>
                     </div>
                 </article>
 
                 <article class="experience-item">
-                    <div class="experience-date" data-lang="exp4_date">Apr 2020 – Jun 2020</div>
+                    <div class="experience-date" data-lang="exp4_date">Oct 2010 – Feb 2018</div>
                     <div class="experience-content">
-                        <h3 data-lang="exp4_title">Developer (Accounting System Project)</h3>
-                        <h4 data-lang="exp4_company">Development Project</h4>
+                        <h3 data-lang="exp4_title">Mobile Phone Technician & Business Owner</h3>
+                        <h4 data-lang="exp4_company">Self-Owned Business, Sana'a, Yemen</h4>
                         <ul>
-                            <li data-lang="exp4_desc1">Development of the website, Android, and iOS applications.</li>
-                            <li data-lang="exp4_desc2">Developed using React, Node.js, SQL Server, ASP.NET Core.</li>
-                            <li data-lang="exp4_desc3">Deployed applications to Azure Cloud.</li>
-                            <li data-lang="exp4_desc4">Contributed to team effort by accomplishing related results as needed.</li>
-                        </ul>
-                    </div>
-                </article>
-
-                <article class="experience-item">
-                    <div class="experience-date" data-lang="exp5_date">Jan 2019 – Aug 2019</div>
-                    <div class="experience-content">
-                        <h3 data-lang="exp5_title">Project Manager & Developer (Institutes Nawi App)</h3>
-                        <h4 data-lang="exp5_company">Nawi App Project</h4>
-                        <ul>
-                            <li data-lang="exp5_desc1">Managed project lifecycle and development.</li>
-                            <li data-lang="exp5_desc2">Developed using Flutter, Dart, SQLite, SQL Server, and ASP.NET Web API.</li>
-                            <li data-lang="exp5_desc3">Created the control panel using React.js.</li>
-                            <li data-lang="exp5_desc4">Deployed to Google Cloud Platform.</li>
-                            <li data-lang="exp5_desc5">Handled digital marketing on social media (Facebook, Twitter, YouTube).</li>
-                        </ul>
-                    </div>
-                </article>
-                
-                <article class="experience-item">
-                    <div class="experience-date" data-lang="exp6_date">2017 – 2018</div>
-                    <div class="experience-content">
-                        <h3 data-lang="exp6_title">Freelancer</h3>
-                        <h4 data-lang="exp6_company">Mostaql & Khamsat</h4>
-                        <ul>
-                            <li data-lang="exp6_desc1">Developed the Android Awrad Application.</li>
-                            <li data-lang="exp6_desc2">Web development using JavaScript, HTML5, CSS.</li>
-                            <li data-lang="exp6_desc3">Designed UI/UX for websites and apps using Adobe XD.</li>
-                            <li data-lang="exp6_desc4">Data entry for Modern Pharma Company.</li>
+                            <li data-lang="exp4_desc1">Managed all operational aspects of a self-owned mobile repair and accessories business.</li>
+                            <li data-lang="exp4_desc2">Performed advanced software troubleshooting, including OS flashing, device unlocking, and resolving complex software issues.</li>
+                            <li data-lang="exp4_desc3">Diagnosed and repaired a wide range of hardware faults, such as screen replacements and charging port repairs.</li>
+                            <li data-lang="exp4_desc4">Provided direct customer service and technical consultation, building a strong client base.</li>
                         </ul>
                     </div>
                 </article>
@@ -780,17 +756,17 @@
                 <h2 class="section-title" data-lang="education">Education</h2>
                 <article class="edu-cert-item">
                     <div class="info">
-                        <h3 data-lang="edu1_degree">Bachelor's Degree in Programming</h3>
+                        <h3 data-lang="edu1_degree">Bachelor's Degree of Programmer</h3>
                         <p data-lang="edu1_school">Sana'a Community College</p>
                     </div>
-                    <div class="date" data-lang="edu1_date">Oct 2015 – Jul 2019</div>
+                    <div class="date" data-lang="edu1_date">Apr 2018</div>
                 </article>
                 <article class="edu-cert-item">
                     <div class="info">
                         <h3 data-lang="edu2_degree">High School</h3>
                         <p data-lang="edu2_school">Omar Al-Mukhtar School, Sana'a</p>
                     </div>
-                    <div class="date" data-lang="edu2_date">Jul 2013</div>
+                    <div class="date" data-lang="edu2_date">Sep 2016</div>
                 </article>
             </section>
 
@@ -799,17 +775,17 @@
                 <h2 class="section-title" data-lang="certificates">Certificates & Courses</h2>
                 <article class="edu-cert-item">
                     <div class="info">
-                        <h3 data-lang="cert1_name">Advanced English Language Course</h3>
-                        <p data-lang="cert1_issuer">Exceed, English Learning Centers</p>
+                        <h3 data-lang="cert1_name">Digital Marketing</h3>
+                        <p data-lang="cert1_issuer">Google</p>
                     </div>
-                    <div class="date" data-lang="cert1_date">Jan 2020 - Feb 2020</div>
+                    <div class="date" data-lang="cert1_date">Jun 2020</div>
                 </article>
-                <article class="edu-cert-item">
+                 <article class="edu-cert-item">
                     <div class="info">
-                        <h3 data-lang="cert2_name">Digital Marketing</h3>
-                        <p data-lang="cert2_issuer">Google</p>
+                        <h3 data-lang="cert2_name">Advanced English Language Course</h3>
+                        <p data-lang="cert2_issuer">Exceed, English Learning Centers</p>
                     </div>
-                    <div class="date" data-lang="cert2_date">Jun 2020</div>
+                    <div class="date" data-lang="cert2_date">Aug 2019</div>
                 </article>
                 <article class="edu-cert-item">
                     <div class="info">
@@ -818,19 +794,19 @@
                     </div>
                     <div class="date" data-lang="cert3_date">Jun 2018</div>
                 </article>
-                <article class="edu-cert-item">
+                 <article class="edu-cert-item">
                     <div class="info">
-                        <h3 data-lang="cert4_name">CompTIA A+</h3>
-                        <p data-lang="cert4_issuer">Certification</p>
+                        <h3 data-lang="cert4_name">English Language Course, Level 2</h3>
+                        <p data-lang="cert4_issuer">Seeds Education Institute</p>
                     </div>
-                    <div class="date" data-lang="cert4_date">Nov 2016 - Dec 2016</div>
+                    <div class="date" data-lang="cert4_date">Nov 2017</div>
                 </article>
                 <article class="edu-cert-item">
                     <div class="info">
-                        <h3 data-lang="cert5_name">English Language Course, Level 2</h3>
-                        <p data-lang="cert5_issuer">Seeds Education Institute</p>
+                        <h3 data-lang="cert5_name">CompTIA A+</h3>
+                        <p data-lang="cert5_issuer">Certification</p>
                     </div>
-                    <div class="date" data-lang="cert5_date">Jul 2014 - Aug 2014</div>
+                    <div class="date" data-lang="cert5_date">Dec 2016</div>
                 </article>
             </section>
 
@@ -841,13 +817,13 @@
                     <div class="info">
                         <h3 data-lang="lang_ar">Arabic</h3>
                     </div>
-                    <div class="date" data-lang="lang_ar_level">Native (Excellent Spoken & Written)</div>
+                    <div class="date" data-lang="lang_ar_level">Spoken: Excellent, Written: Excellent</div>
                 </article>
                 <article class="edu-cert-item">
                     <div class="info">
                         <h3 data-lang="lang_en">English</h3>
                     </div>
-                    <div class="date" data-lang="lang_en_level">Very Good (Spoken & Written)</div>
+                    <div class="date" data-lang="lang_en_level">Spoken: Good, Written: Good</div>
                 </article>
             </section>
 
@@ -855,33 +831,32 @@
             <section class="section" id="technical-skills">
                 <h2 class="section-title" data-lang="programmer_skills">Technical Skills</h2>
                 <div class="skills-grid" role="list">
+                    <span class="skill-tag" role="listitem">Flutter</span>
+                    <span class="skill-tag" role="listitem">Dart</span>
                     <span class="skill-tag" role="listitem">React</span>
                     <span class="skill-tag" role="listitem">React Native</span>
                     <span class="skill-tag" role="listitem">Node.js</span>
-                    <span class="skill-tag" role="listitem">Flutter</span>
-                    <span class="skill-tag" role="listitem">ASP.NET Core</span>
-                    <span class="skill-tag" role="listitem">SQL Server</span>
-                    <span class="skill-tag" role="listitem">MySQL</span>
-                    <span class="skill-tag" role="listitem">SQLite</span>
-                    <span class="skill-tag" role="listitem">C#</span>
-                    <span class="skill-tag" role="listitem">Java</span>
                     <span class="skill-tag" role="listitem">JavaScript</span>
-                    <span class="skill-tag" role="listitem">Python</span>
-                    <span class="skill-tag" role="listitem">HTML5</span>
-                    <span class="skill-tag" role="listitem">CSS3</span>
-                    <span class="skill-tag" role="listitem">C/C++</span>
-                    <span class="skill-tag" role="listitem">Dart</span>
-                    <span class="skill-tag" role="listitem">jQuery</span>
                     <span class="skill-tag" role="listitem">Next.js</span>
-                    <span class="skill-tag" role="listitem">Vue.js</span>
-                    <span class="skill-tag" role="listitem">Bootstrap</span>
-                    <span class="skill-tag" role="listitem">TailwindCSS</span>
-                    <span class="skill-tag" role="listitem">Git</span>
+                    <span class="skill-tag" role="listitem">ASP.NET Core</span>
+                    <span class="skill-tag" role="listitem">C#</span>
+                    <span class="skill-tag" role="listitem">SQL Server</span>
+                    <span class="skill-tag" role="listitem">SQLite</span>
+                    <span class="skill-tag" role="listitem">MySQL</span>
                     <span class="skill-tag" role="listitem">Firebase</span>
                     <span class="skill-tag" role="listitem">MongoDB</span>
                     <span class="skill-tag" role="listitem">Redis</span>
                     <span class="skill-tag" role="listitem">Redux</span>
-                    <span class="skill-tag" role="listitem">Webpack</span>
+                    <span class="skill-tag" role="listitem">Git</span>
+                    <span class="skill-tag" role="listitem">HTML5</span>
+                    <span class="skill-tag" role="listitem">CSS3</span>
+                    <span class="skill-tag" role="listitem">Sass</span>
+                    <span class="skill-tag" role="listitem">Bootstrap</span>
+                    <span class="skill-tag" role="listitem">TailwindCSS</span>
+                    <span class="skill-tag" role="listitem">Java</span>
+                    <span class="skill-tag" role="listitem">Python</span>
+                    <span class="skill-tag" role="listitem">C/C++</span>
+                    <span class="skill-tag" role="listitem">Kotlin</span>
                     <span class="skill-tag" role="listitem">Android</span>
                     <span class="skill-tag" role="listitem">iOS</span>
                     <span class="skill-tag" role="listitem">UI/UX Design</span>
@@ -889,6 +864,8 @@
                     <span class="skill-tag" role="listitem">Adobe XD</span>
                     <span class="skill-tag" role="listitem">Photoshop</span>
                     <span class="skill-tag" role="listitem">Illustrator</span>
+                    <span class="skill-tag" role="listitem">Express.js</span>
+                    <span class="skill-tag" role="listitem">Electron.js</span>
                 </div>
             </section>
 
@@ -896,21 +873,19 @@
             <section class="section" id="other-skills">
                 <h2 class="section-title" data-lang="other_skills">Other Skills</h2>
                 <ul class="other-skills-list">
-                    <li data-lang="oskill1">Excellent in using Microsoft Office Applications.</li>
-                    <li data-lang="oskill2">Typing speed: 40 English WPM.</li>
-                    <li data-lang="oskill3">Proficient with office equipment (photocopier, scanner, fax).</li>
-                    <li data-lang="oskill4">Self-motivated with minimum supervision.</li>
-                    <li data-lang="oskill5">Ability to work within a team or individually.</li>
-                    <li data-lang="oskill6">Ability to handle stress and pressure.</li>
-                    <li data-lang="oskill7">Well-organized, fast learner, and able to write reports.</li>
-                    <li data-lang="oskill8">Excellent analytical and problem-solving skills.</li>
-                    <li data-lang="oskill9">Ability to collaborate cross-functionally.</li>
+                    <li data-lang="oskill1"><strong>Full Project Lifecycle Management:</strong> Proven ability to manage software projects from initial concept and UI/UX design (Figma, Adobe XD) to development, testing, deployment, and monetization.</li>
+                    <li data-lang="oskill2"><strong>Excellent Analytical & Problem-Solving Skills:</strong> Adept at analyzing complex requirements and breaking them down into manageable tasks, demonstrated by developing features like multi-currency debt tracking.</li>
+                    <li data-lang="oskill3"><strong>Adaptability & Fast Learning:</strong> Quickly masters and applies new technologies and APIs as needed, including Google Drive API and PDF generation libraries.</li>
+                    <li data-lang="oskill4"><strong>Customer Service & Technical Support:</strong> Experienced in direct customer interaction, technical troubleshooting, and providing clear explanations of complex issues.</li>
+                    <li data-lang="oskill5"><strong>Self-Motivated & Organized:</strong> Highly organized with a strong work ethic, capable of managing deadlines and delivering high-quality results with minimal supervision.</li>
+                    <li data-lang="oskill6"><strong>Teamwork & Collaboration:</strong> Works effectively both independently and as part of a collaborative team using version control systems like Git and Bitbucket.</li>
+                    <li data-lang="oskill7"><strong>Technical Proficiency:</strong> Proficient in Microsoft Office Suite (Word, Excel, PowerPoint) and possesses efficient typing skills for fast documentation and data entry.</li>
                 </ul>
             </section>
         </main>
         
         <footer class="footer">
-            <a href="https://github.com/AymanAlmehanni" target="_blank" rel="noopener noreferrer" data-lang="github_profile" aria-label="زيارة ملف GitHub">GitHub: AymanAlmehanni</a>
+            <a href="https://github.com/aymanplus" target="_blank" rel="noopener noreferrer" data-lang="github_profile" aria-label="Visit GitHub Profile">GitHub: AymanAlmehanni</a>
         </footer>
     </div>
 
@@ -936,92 +911,74 @@
                 programmer_skills: "Technical Skills",
                 other_skills: "Other Skills",
                 // Experience 1
-                exp1_date: "2022 – 2025",
-                exp1_title: "Financial Operations Specialist",
-                exp1_company: "Financial Sector",
-                exp1_desc1: "Managed and reconciled financial accounts to ensure accuracy.",
-                exp1_desc2: "Processed a high volume of domestic and international financial transfers.",
-                exp1_desc3: "Ensured compliance with financial policies and procedures in all operations.",
+                exp1_date: "Dec 2024 – Present",
+                exp1_title: "Flutter Developer & Project Owner",
+                exp1_company: "Sales Memo App - Personal Project",
+                exp1_desc1: "Developed a comprehensive sales and order management mobile application from concept to deployment using the Flutter framework and Dart.",
+                exp1_desc2: "Engineered a local persistence layer using SQLite for offline-first data management of orders, customers, and complex product structures.",
+                exp1_desc3: "Implemented state management using the Provider package to ensure a reactive, consistent, and maintainable user interface.",
+                exp1_desc4: "Designed a robust backup and restore feature, packaging the SQLite database and images into a single ZIP archive for data portability.",
+                exp1_desc5: "Architected a modular system with distinct models for various product types, including a drawing/sketching feature for custom orders.",
                 // Experience 2
-                exp2_date: "2022",
-                exp2_title: "Freelancer (Alrbea Project)",
-                exp2_company: "Alrbea (Saudia)",
-                exp2_desc1: "Development of the website and Android application.",
-                exp2_desc2: "Development of React, React Native, and Flutter projects.",
-                exp2_desc3: "Collaborated with a team using Bitbucket for version control.",
-                exp2_desc4: "Designed UI/UX using Adobe XD and Figma.",
-                exp2_desc5: "Problem fixing and debugging.",
+                exp2_date: "Jan 2025 – Present",
+                exp2_title: "Lead Flutter Developer & Project Owner",
+                exp2_company: "DafterDiwn (Debt Ledger App) - Personal Project",
+                exp2_desc1: "Architected a sophisticated, offline-first mobile app for managing debts across multiple currencies, using Flutter, Dart, and GoRouter.",
+                exp2_desc2: "Engineered a robust data layer with SQLite, designing a normalized schema and managing database migrations for seamless updates.",
+                exp2_desc3: "Integrated Google Drive API for secure cloud backup/restore, leveraging the private appDataFolder for user data privacy.",
+                exp2_desc4: "Implemented an advanced PDF reporting feature with custom date ranges, multi-currency support, and full Arabic font compatibility.",
                 // Experience 3
-                exp3_date: "Apr 2021 – Sep 2021",
-                exp3_title: "Developer (Twfeq Platform)",
-                exp3_company: "Twfeq Platform",
-                exp3_desc1: "Developed the main website.",
-                exp3_desc2: "Built an application and site for contractors in Saudi Arabia.",
-                exp3_desc3: "Developed using React, Node.js, SQL Server, ASP.NET Core, and Android.",
-                exp3_desc4: "Deployed applications to Azure Cloud.",
+                exp3_date: "Sep 2019 – Jun 2025",
+                exp3_title: "Financial Services Officer / Teller",
+                exp3_company: "Al-Najm & Al-Amri for Exchange, Sana'a, Yemen",
+                exp3_desc1: "Executed a high volume of foreign currency exchange transactions (buy/sell), ensuring accuracy and adherence to market rates.",
+                exp3_desc2: "Processed domestic and international remittances efficiently through various banking networks.",
+                exp3_desc3: "Conducted daily account settlements and reconciled cash balances to ensure financial integrity.",
+                exp3_desc4: "Managed end-of-day closing procedures, including balancing accounts and preparing summary reports.",
                 // Experience 4
-                exp4_date: "Apr 2020 – Jun 2020",
-                exp4_title: "Developer (Accounting System Project)",
-                exp4_company: "Development Project",
-                exp4_desc1: "Development of the website, Android, and iOS applications.",
-                exp4_desc2: "Developed using React, Node.js, SQL Server, ASP.NET Core.",
-                exp4_desc3: "Deployed applications to Azure Cloud.",
-                exp4_desc4: "Contributed to team effort by accomplishing related results as needed.",
-                // Experience 5
-                exp5_date: "Jan 2019 – Aug 2019",
-                exp5_title: "Project Manager & Developer (Institutes Nawi App)",
-                exp5_company: "Nawi App Project",
-                exp5_desc1: "Managed project lifecycle and development.",
-                exp5_desc2: "Developed using Flutter, Dart, SQLite, SQL Server, and ASP.NET Web API.",
-                exp5_desc3: "Created the control panel using React.js.",
-                exp5_desc4: "Deployed to Google Cloud Platform.",
-                exp5_desc5: "Handled digital marketing on social media (Facebook, Twitter, YouTube).",
-                // Experience 6
-                exp6_date: "2017 – 2018",
-                exp6_title: "Freelancer",
-                exp6_company: "Mostaql & Khamsat",
-                exp6_desc1: "Developed the Android Awrad Application.",
-                exp6_desc2: "Web development using JavaScript, HTML5, CSS.",
-                exp6_desc3: "Designed UI/UX for websites and apps using Adobe XD.",
-                exp6_desc4: "Data entry for Modern Pharma Company.",
+                exp4_date: "Oct 2010 – Feb 2018",
+                exp4_title: "Mobile Phone Technician & Business Owner",
+                exp4_company: "Self-Owned Business, Sana'a, Yemen",
+                exp4_desc1: "Managed all operational aspects of a self-owned mobile repair and accessories business.",
+                exp4_desc2: "Performed advanced software troubleshooting, including OS flashing, device unlocking, and resolving complex software issues.",
+                exp4_desc3: "Diagnosed and repaired a wide range of hardware faults, such as screen replacements and charging port repairs.",
+                exp4_desc4: "Provided direct customer service and technical consultation, building a strong client base.",
                 // Education
-                edu1_degree: "Bachelor's Degree in Programming",
+                edu1_degree: "Bachelor's Degree of Programmer",
                 edu1_school: "Sana'a Community College",
-                edu1_date: "Oct 2015 – Jul 2019",
+                edu1_date: "Apr 2018",
                 edu2_degree: "High School",
                 edu2_school: "Omar Al-Mukhtar School, Sana'a",
-                edu2_date: "Jul 2013",
+                edu2_date: "Sep 2016",
                 // Certificates
-                cert1_name: "Advanced English Language Course",
-                cert1_issuer: "Exceed, English Learning Centers",
-                cert1_date: "Jan 2020 - Feb 2020",
-                cert2_name: "Digital Marketing",
-                cert2_issuer: "Google",
-                cert2_date: "Jun 2020",
+                cert1_name: "Digital Marketing",
+                cert1_issuer: "Google",
+                cert1_date: "Jun 2020",
+                cert2_name: "Advanced English Language Course",
+                cert2_issuer: "Exceed, English Learning Centers",
+                cert2_date: "Aug 2019",
                 cert3_name: "ICDL",
                 cert3_issuer: "Rights way for Rights and Development",
                 cert3_date: "Jun 2018",
-                cert4_name: "CompTIA A+",
-                cert4_issuer: "Certification",
-                cert4_date: "Nov 2016 - Dec 2016",
-                cert5_name: "English Language Course, Level 2",
-                cert5_issuer: "Seeds Education Institute",
-                cert5_date: "Jul 2014 - Aug 2014",
+                cert4_name: "English Language Course, Level 2",
+                cert4_issuer: "Seeds Education Institute",
+                cert4_date: "Nov 2017",
+                cert5_name: "CompTIA A+",
+                cert5_issuer: "Certification",
+                cert5_date: "Dec 2016",
                 // Language Skills
                 lang_ar: "Arabic",
-                lang_ar_level: "Native (Excellent Spoken & Written)",
+                lang_ar_level: "Spoken: Excellent, Written: Excellent",
                 lang_en: "English",
-                lang_en_level: "Very Good (Spoken & Written)",
+                lang_en_level: "Spoken: Good, Written: Good",
                 // Other Skills
-                oskill1: "Excellent in using Microsoft Office Applications.",
-                oskill2: "Typing speed: 40 English WPM.",
-                oskill3: "Proficient with office equipment (photocopier, scanner, fax).",
-                oskill4: "Self-motivated with minimum supervision.",
-                oskill5: "Ability to work within a team or individually.",
-                oskill6: "Ability to handle stress and pressure.",
-                oskill7: "Well-organized, fast learner, and able to write reports.",
-                oskill8: "Excellent analytical and problem-solving skills.",
-                oskill9: "Ability to collaborate cross-functionally.",
+                oskill1: "<strong>Full Project Lifecycle Management:</strong> Proven ability to manage software projects from initial concept and UI/UX design (Figma, Adobe XD) to development, testing, deployment, and monetization.",
+                oskill2: "<strong>Excellent Analytical & Problem-Solving Skills:</strong> Adept at analyzing complex requirements and breaking them down into manageable tasks, demonstrated by developing features like multi-currency debt tracking.",
+                oskill3: "<strong>Adaptability & Fast Learning:</strong> Quickly masters and applies new technologies and APIs as needed, including Google Drive API and PDF generation libraries.",
+                oskill4: "<strong>Customer Service & Technical Support:</strong> Experienced in direct customer interaction, technical troubleshooting, and providing clear explanations of complex issues.",
+                oskill5: "<strong>Self-Motivated & Organized:</strong> Highly organized with a strong work ethic, capable of managing deadlines and delivering high-quality results with minimal supervision.",
+                oskill6: "<strong>Teamwork & Collaboration:</strong> Works effectively both independently and as part of a collaborative team using version control systems like Git and Bitbucket.",
+                oskill7: "<strong>Technical Proficiency:</strong> Proficient in Microsoft Office Suite (Word, Excel, PowerPoint) and possesses efficient typing skills for fast documentation and data entry.",
                 // Footer
                 github_profile: "GitHub: AymanAlmehanni"
             },
@@ -1044,92 +1001,74 @@
                 programmer_skills: "المهارات التقنية",
                 other_skills: "مهارات أخرى",
                 // Experience 1
-                exp1_date: "2022 – 2025",
-                exp1_title: "أخصائي عمليات مالية",
-                exp1_company: "قطاع مالي",
-                exp1_desc1: "إدارة وتسوية الحسابات المالية لضمان الدقة.",
-                exp1_desc2: "معالجة حجم كبير من التحويلات المالية المحلية والدولية.",
-                exp1_desc3: "ضمان الامتثال للسياسات والإجراءات المالية في جميع العمليات.",
+                exp1_date: "ديسمبر 2024 – الآن",
+                exp1_title: "مطور فلاتر ومالك مشروع",
+                exp1_company: "تطبيق مذكرة مبيعات - مشروع شخصي",
+                exp1_desc1: "تطوير تطبيق جوال شامل لإدارة المبيعات والطلبات من الفكرة إلى النشر باستخدام إطار عمل Flutter و Dart.",
+                exp1_desc2: "هندسة طبقة تخزين محلية باستخدام SQLite للعمل دون اتصال بالإنترنت لإدارة الطلبات والعملاء وهياكل المنتجات المعقدة.",
+                exp1_desc3: "تنفيذ إدارة الحالة باستخدام حزمة Provider لضمان واجهة مستخدم تفاعلية ومتسقة وقابلة للصيانة.",
+                exp1_desc4: "تصميم ميزة نسخ احتياطي واستعادة قوية، وتجميع قاعدة بيانات SQLite والصور في ملف ZIP واحد لسهولة نقل البيانات.",
+                exp1_desc5: "بناء نظام معياري بنماذج مميزة لأنواع المنتجات المختلفة، بما في ذلك ميزة الرسم للطلبات المخصصة.",
                 // Experience 2
-                exp2_date: "2022",
-                exp2_title: "مطور مستقل (مشروع الربيع)",
-                exp2_company: "الربيع (السعودية)",
-                exp2_desc1: "تطوير الموقع الإلكتروني وتطبيق أندرويد.",
-                exp2_desc2: "تطوير مشاريع باستخدام React، React Native، و Flutter.",
-                exp2_desc3: "التعاون مع الفريق باستخدام Bitbucket لإدارة الإصدارات.",
-                exp2_desc4: "تصميم واجهات المستخدم وتجربة المستخدم (UI/UX) باستخدام Adobe XD و Figma.",
-                exp2_desc5: "إصلاح المشاكل والأخطاء البرمجية.",
+                exp2_date: "يناير 2025 – الآن",
+                exp2_title: "مطور فلاتر رئيسي ومالك مشروع",
+                exp2_company: "تطبيق دفتر ديون - مشروع شخصي",
+                exp2_desc1: "تصميم تطبيق جوال متطور يعمل دون اتصال بالإنترنت لإدارة الديون بعملات متعددة، باستخدام Flutter و Dart و GoRouter.",
+                exp2_desc2: "هندسة طبقة بيانات قوية باستخدام SQLite، وتصميم مخطط مُنمذج وإدارة ترحيل قاعدة البيانات لتحديثات سلسة.",
+                exp2_desc3: "دمج Google Drive API للنسخ الاحتياطي والاستعادة السحابي الآمن، مع الاستفادة من مجلد appDataFolder الخاص لخصوصية بيانات المستخدم.",
+                exp2_desc4: "تنفيذ ميزة تقارير PDF متقدمة مع نطاقات تاريخ مخصصة، ودعم متعدد العملات، وتوافق كامل مع الخطوط العربية.",
                 // Experience 3
-                exp3_date: "أبريل 2021 – سبتمبر 2021",
-                exp3_title: "مطور (منصة توفيق)",
-                exp3_company: "منصة توفيق",
-                exp3_desc1: "تطوير الموقع الرئيسي للمنصة.",
-                exp3_desc2: "بناء تطبيق وموقع للمقاولين في المملكة العربية السعودية.",
-                exp3_desc3: "التطوير باستخدام React, Node.js, SQL Server, ASP.NET Core, و Android.",
-                exp3_desc4: "نشر التطبيقات على سحابة Azure.",
+                exp3_date: "سبتمبر 2019 – يونيو 2025",
+                exp3_title: "مسؤول خدمات مالية / صراف",
+                exp3_company: "النجم والعمري للصرافة، صنعاء، اليمن",
+                exp3_desc1: "تنفيذ حجم كبير من معاملات صرف العملات الأجنبية (بيع/شراء)، مع ضمان الدقة والالتزام بأسعار السوق.",
+                exp3_desc2: "معالجة الحوالات المالية المحلية والدولية بكفاءة عبر شبكات مصرفية متنوعة.",
+                exp3_desc3: "إجراء التسويات الحسابية اليومية ومطابقة الأرصدة النقدية لضمان النزاهة المالية.",
+                exp3_desc4: "إدارة إجراءات الإغلاق اليومي، بما في ذلك موازنة الحسابات وإعداد التقارير الموجزة.",
                 // Experience 4
-                exp4_date: "أبريل 2020 – يونيو 2020",
-                exp4_title: "مطور (مشروع نظام محاسبي)",
-                exp4_company: "مشروع تطويري",
-                exp4_desc1: "تطوير موقع إلكتروني وتطبيقات Android و iOS.",
-                exp4_desc2: "التطوير باستخدام React, Node.js, SQL Server, و ASP.NET Core.",
-                exp4_desc3: "نشر التطبيقات على سحابة Azure.",
-                exp4_desc4: "المساهمة في جهود الفريق من خلال تحقيق النتائج ذات الصلة حسب الحاجة.",
-                // Experience 5
-                exp5_date: "يناير 2019 – أغسطس 2019",
-                exp5_title: "مدير مشروع ومطور (تطبيق معاهد ناوي)",
-                exp5_company: "مشروع تطبيق ناوي",
-                exp5_desc1: "إدارة دورة حياة المشروع وتطويره.",
-                exp5_desc2: "التطوير باستخدام Flutter, Dart, SQLite, SQL Server, و ASP.NET Web API.",
-                exp5_desc3: "إنشاء لوحة التحكم باستخدام React.js.",
-                exp5_desc4: "النشر على منصة Google Cloud.",
-                exp5_desc5: "إدارة التسويق الرقمي عبر وسائل التواصل الاجتماعي (فيسبوك، تويتر، يوتيوب).",
-                // Experience 6
-                exp6_date: "2017 – 2018",
-                exp6_title: "مطور مستقل",
-                exp6_company: "مستقل وخمسات",
-                exp6_desc1: "تطوير تطبيق أوراد للأندرويد.",
-                exp6_desc2: "تطوير الويب باستخدام JavaScript, HTML5, CSS.",
-                exp6_desc3: "تصميم واجهات المستخدم وتجربة المستخدم للمواقع والتطبيقات باستخدام Adobe XD.",
-                exp6_desc4: "إدخال بيانات لشركة Modern Pharma.",
+                exp4_date: "أكتوبر 2010 – فبراير 2018",
+                exp4_title: "فني هواتف محمولة وصاحب عمل",
+                exp4_company: "عمل خاص، صنعاء، اليمن",
+                exp4_desc1: "إدارة جميع الجوانب التشغيلية لعمل خاص في مجال إصلاح الهواتف المحمولة وملحقاتها.",
+                exp4_desc2: "أداء استكشاف وإصلاح أعطال البرامج المتقدمة، بما في ذلك تثبيت أنظمة التشغيل (سوفتوير) وإلغاء قفل الأجهزة وحل مشكلات البرامج المعقدة.",
+                exp4_desc3: "تشخيص وإصلاح مجموعة واسعة من أعطال الأجهزة، مثل استبدال الشاشات وإصلاح منافذ الشحن.",
+                exp4_desc4: "تقديم خدمة عملاء مباشرة واستشارات فنية، وبناء قاعدة عملاء قوية.",
                 // Education
                 edu1_degree: "درجة البكالوريوس في البرمجة",
                 edu1_school: "كلية مجتمع صنعاء",
-                edu1_date: "أكتوبر 2015 – يوليو 2019",
+                edu1_date: "أبريل 2018",
                 edu2_degree: "الثانوية العامة",
                 edu2_school: "مدرسة عمر المختار، صنعاء",
-                edu2_date: "يوليو 2013",
+                edu2_date: "سبتمبر 2016",
                 // Certificates
-                cert1_name: "دورة لغة إنجليزية متقدمة",
-                cert1_issuer: "مراكز إكسيد لتعليم اللغة الإنجليزية",
-                cert1_date: "يناير 2020 - فبراير 2020",
-                cert2_name: "التسويق الرقمي",
-                cert2_issuer: "Google",
-                cert2_date: "يونيو 2020",
+                cert1_name: "التسويق الرقمي",
+                cert1_issuer: "Google",
+                cert1_date: "يونيو 2020",
+                cert2_name: "دورة لغة إنجليزية متقدمة",
+                cert2_issuer: "مراكز إكسيد لتعليم اللغة الإنجليزية",
+                cert2_date: "أغسطس 2019",
                 cert3_name: "الرخصة الدولية لقيادة الحاسوب (ICDL)",
                 cert3_issuer: "رايتس واي للحقوق والتنمية",
                 cert3_date: "يونيو 2018",
-                cert4_name: "شهادة +CompTIA A",
-                cert4_issuer: "شهادة معتمدة",
-                cert4_date: "نوفمبر 2016 - ديسمبر 2016",
-                cert5_name: "دورة لغة إنجليزية، المستوى الثاني",
-                cert5_issuer: "معهد سيدز التعليمي",
-                cert5_date: "يوليو 2014 - أغسطس 2014",
+                cert4_name: "دورة لغة إنجليزية، المستوى الثاني",
+                cert4_issuer: "معهد سيدز التعليمي",
+                cert4_date: "نوفمبر 2017",
+                cert5_name: "شهادة +CompTIA A",
+                cert5_issuer: "شهادة معتمدة",
+                cert5_date: "ديسمبر 2016",
                 // Language Skills
                 lang_ar: "العربية",
-                lang_ar_level: "اللغة الأم (ممتاز تحدثاً وكتابةً)",
+                lang_ar_level: "تحدث: ممتاز، كتابة: ممتاز",
                 lang_en: "الإنجليزية",
-                lang_en_level: "جيد جداً (تحدثاً وكتابةً)",
+                lang_en_level: "تحدث: جيد، كتابة: جيد",
                 // Other Skills
-                oskill1: "إجادة تامة لتطبيقات مايكروسوفت أوفيس.",
-                oskill2: "سرعة طباعة 40 كلمة إنجليزية في الدقيقة.",
-                oskill3: "كفاءة في استخدام المعدات المكتبية (طابعة، ماسح ضوئي، فاكس).",
-                oskill4: "القدرة على العمل بشكل مستقل وبأقل قدر من الإشراف.",
-                oskill5: "القدرة على العمل ضمن فريق أو بشكل فردي.",
-                oskill6: "القدرة على التعامل مع ضغوط العمل.",
-                oskill7: "منظم، سريع التعلم، والقدرة على كتابة التقارير.",
-                oskill8: "مهارات تحليلية ممتازة وقدرة على حل المشكلات المعقدة.",
-                oskill9: "القدرة على التعاون بين الأقسام المختلفة.",
+                oskill1: "<strong>إدارة دورة حياة المشروع بالكامل:</strong> قدرة مثبتة على إدارة مشاريع البرمجيات من الفكرة الأولية وتصميم الواجهات (Figma, Adobe XD) إلى التطوير والاختبار والنشر وتحقيق الدخل.",
+                oskill2: "<strong>مهارات تحليلية ممتازة وحل المشكلات:</strong> براعة في تحليل المتطلبات المعقدة وتقسيمها إلى مهام يمكن إدارتها، كما يتضح من تطوير ميزات مثل تتبع الديون متعددة العملات.",
+                oskill3: "<strong>القدرة على التكيف والتعلم السريع:</strong> إتقان وتطبيق التقنيات وواجهات برمجة التطبيقات الجديدة بسرعة حسب الحاجة، بما في ذلك Google Drive API ومكتبات إنشاء ملفات PDF.",
+                oskill4: "<strong>خدمة العملاء والدعم الفني:</strong> خبرة في التعامل المباشر مع العملاء، واستكشاف الأخطاء الفنية وإصلاحها، وتقديم شروحات واضحة للمشكلات المعقدة.",
+                oskill5: "<strong>تحفيز ذاتي وتنظيم:</strong> منظم للغاية مع أخلاقيات عمل قوية، وقادر على إدارة المواعيد النهائية وتقديم نتائج عالية الجودة بأقل قدر من الإشراف.",
+                oskill6: "<strong>العمل الجماعي والتعاون:</strong> يعمل بفعالية بشكل مستقل وكجزء من فريق تعاوني باستخدام أنظمة التحكم في الإصدارات مثل Git و Bitbucket.",
+                oskill7: "<strong>الكفاءة التقنية:</strong> إتقان مجموعة Microsoft Office (Word, Excel, PowerPoint) وامتلاك مهارات طباعة فعالة للتوثيق وإدخال البيانات بسرعة.",
                 // Footer
                 github_profile: "ملف GitHub: AymanAlmehanni"
             }
@@ -1176,8 +1115,12 @@
 
                     // Update meta description
                     const metaDesc = document.querySelector('meta[name="description"]');
-                    if (metaDesc && this.currentLang === 'ar') {
-                        metaDesc.content = 'أيمن المهني - أخصائي عمليات مالية ومطور متكامل خبير في React، Node.js، Flutter، والأنظمة المالية.';
+                    if (metaDesc) {
+                         if (this.currentLang === 'ar') {
+                            metaDesc.content = 'أيمن المهني - مطور فلاتر ومسؤول خدمات مالية خبير في تطوير تطبيقات الجوال، الأنظمة المالية، React، و Node.js.';
+                         } else {
+                            metaDesc.content = 'Ayman Al-mehanni - Experienced Flutter Developer and Financial Services Officer with expertise in mobile app development, financial systems, React, and Node.js.';
+                         }
                     }
 
                     // Update all translatable elements
@@ -1187,38 +1130,27 @@
                             element.innerHTML = translations[this.currentLang][key];
                         }
                     });
+                    
+                    // Update skip link text
+                    const skipLink = document.querySelector('.skip-link');
+                    if(skipLink) {
+                        skipLink.textContent = this.currentLang === 'ar' ? 'تخطي إلى المحتوى الرئيسي' : 'Skip to main content';
+                    }
 
                     // Announce language change for screen readers
                     this.announceToScreenReader(`Language switched to ${this.currentLang === 'ar' ? 'Arabic' : 'English'}`);
                 } catch (error) {
                     console.error('Error switching language:', error);
-                    this.showNotification('خطأ في تبديل اللغة', 'error');
+                    this.showNotification('Error switching language', 'error');
                 }
             }
 
             printCV() {
                 try {
-                    // Add print-specific styles
-                    const printStyles = document.createElement('style');
-                    printStyles.textContent = `
-                        @media print {
-                            @page { margin: 0.5in; }
-                            .controls { display: none !important; }
-                            .container { box-shadow: none !important; margin: 0 !important; }
-                        }
-                    `;
-                    document.head.appendChild(printStyles);
-
-                    // Print
                     window.print();
-
-                    // Remove print styles after printing
-                    setTimeout(() => {
-                        document.head.removeChild(printStyles);
-                    }, 1000);
                 } catch (error) {
                     console.error('Error printing CV:', error);
-                    this.showNotification('خطأ في الطباعة', 'error');
+                    this.showNotification('Error printing CV', 'error');
                 }
             }
 
@@ -1237,7 +1169,7 @@
                     tag.addEventListener('keydown', (e) => {
                         if (e.key === 'Enter' || e.key === ' ') {
                             e.preventDefault();
-                            tag.click();
+                            // This allows the tag to be "clicked" for any potential future JS interactions
                         }
                     });
                 });
@@ -1260,7 +1192,7 @@
             addErrorHandling() {
                 window.addEventListener('error', (e) => {
                     console.error('JavaScript error:', e.error);
-                    this.showNotification('حدث خطأ غير متوقع', 'error');
+                    this.showNotification('An unexpected error occurred', 'error');
                 });
             }
 
@@ -1301,12 +1233,12 @@
                 document.body.appendChild(notification);
                 
                 setTimeout(() => {
-                    notification.style.animation = 'slideOut 0.3s ease';
-                    setTimeout(() => {
-                        if (document.body.contains(notification)) {
-                            document.body.removeChild(notification);
-                        }
-                    }, 300);
+                    notification.style.animation = 'slideOut 0.3s ease forwards';
+                    notification.addEventListener('animationend', () => {
+                         if (document.body.contains(notification)) {
+                             document.body.removeChild(notification);
+                         }
+                    });
                 }, 3000);
             }
         }
@@ -1322,16 +1254,15 @@
         const style = document.createElement('style');
         style.textContent = `
             @keyframes slideIn {
-                from { transform: translateX(100%); opacity: 0; }
+                from { transform: translateX(110%); opacity: 0; }
                 to { transform: translateX(0); opacity: 1; }
             }
             @keyframes slideOut {
                 from { transform: translateX(0); opacity: 1; }
-                to { transform: translateX(100%); opacity: 0; }
+                to { transform: translateX(110%); opacity: 0; }
             }
         `;
         document.head.appendChild(style);
     </script>
 </body>
 </html>
-
